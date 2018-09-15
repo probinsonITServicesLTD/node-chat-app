@@ -1,5 +1,4 @@
 //make connectio server with socket
-const port = process.env.PORT || 3000;
 
 var socket = io.connect(window.location.hostname);
 
