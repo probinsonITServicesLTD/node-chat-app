@@ -1,7 +1,7 @@
 //make connectio server with socket
 const port = process.env.POST || 3000;
 
-var socket = io.connect(`https://gentle-beach-19879.herokuapp.com:${port}`);
+var socket = io.connect(window.location.hostname);
 
 //Query dom
 var message = document.getElementById("message");
